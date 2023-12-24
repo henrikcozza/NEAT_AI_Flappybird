@@ -1,8 +1,12 @@
 # NEAT_AI_Flappybird
 This project is an AI with learns to play a clone from Flappybird using Neural Evolution with Augmenting Topology NEAT.
-<br/>
+<br />
+<br />
+<br />
 ![running game gif](assets/running.gif)
-<br/>
+<br />
+<br />
+<br />
 ## How this work
 The model receive some data inputs to take a decision in output.
 
