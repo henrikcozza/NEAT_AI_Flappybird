@@ -5,8 +5,8 @@ from configs import BIRD_IMAGES
 class Bird:
     sprites = BIRD_IMAGES
     # rotate animations
-    max_rotation = 25
-    rotate_speed = 20
+    max_rotation = 30
+    rotate_speed = 25
     animation_time = 5
 
     def __init__(self, x, y):
@@ -32,16 +32,16 @@ class Bird:
         if dislocate > 16:
             dislocate = 16
         elif dislocate < 0:
-            dislocate -=2
+            dislocate -= 2
         self.y += dislocate
-        # angle
+        # angle      
         if dislocate < 0 or self.y < (self.height + 50):
             if self.angle < self.max_rotation:
                 self.angle = self.max_rotation
-            else:
-                if self.angle > -90:
-                    self.angle -= self.rotate_speed
-    
+        else:
+            if self.angle > -90:
+                self.angle -= self.rotate_speed
+                
     def draw(self, screen):
         # choice a sprite to use in animation
         self.current_sprite += 1

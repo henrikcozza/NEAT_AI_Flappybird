@@ -4,9 +4,9 @@ import os
 import random
 
 
+# screen configurations
 SCREEN_WIDTH = 500
 SCREEN_HEIGHT = 800
-
 PIPE_IMAGE = pygame.transform.scale2x(
     pygame.image.load(
         os.path.join("../assets/images","pipe.png")
@@ -39,8 +39,12 @@ BIRD_IMAGES = [
         )
     ),
 ]
-
 pygame.font.init()
 #TODO change to use project local font 
 FONT_SCORE = pygame.font.SysFont('Vineta BT', 50)
+
+# AI configurations
+AI_IS_PLAY = True
+GENERATION = 0
+BEST_SCORE = 0
 
