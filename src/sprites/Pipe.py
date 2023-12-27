@@ -18,7 +18,7 @@ class Pipe:
         self.define_height()
 
     def define_height(self):
-        self.height = random.randrange((SCREEN_HEIGHT * 10) / 100, (SCREEN_HEIGHT * 30) / 100 )
+        self.height = random.randrange( int((SCREEN_HEIGHT * 10) / 100), int((SCREEN_HEIGHT * 30) / 100) )
         self.position_top = self.height - self.sprite_top.get_height()
         self.position_down = self.height + self.distance
 
@@ -45,4 +45,5 @@ class Pipe:
     def get_mask(self, sprite):
         """Returns a mask of the sprite that is used 
         to calculate the collision using perfect pixel precision"""
-        return pygame.mask.from_surface(sprite)
+        mask = pygame.mask.from_surface(sprite)
+        return mask
