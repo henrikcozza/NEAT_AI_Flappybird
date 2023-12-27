@@ -28,7 +28,7 @@ Using the inputs that are multiplied with a weight, the result is used in a func
 
  > pip install -r requirements.txt
 
- > python3 ./main.py
+ > python3 ./src/main.py
 
 
 # optional
