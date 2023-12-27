@@ -1,9 +1,7 @@
 import os
 import pygame
 from configs import SCREEN_WIDTH, SCREEN_HEIGHT, BACKGROUND_IMAGE, FONT_SCORE, AI_IS_PLAY, GENERATION, BEST_SCORE
-from Bird import Bird
-from Pipe import Pipe
-from Floor import Floor
+from sprites import Bird, Floor, Pipe
 import neat 
 
 
